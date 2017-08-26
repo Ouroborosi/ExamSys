@@ -1,11 +1,14 @@
 from sqlalchemy import MetaData, Table, Column, String, DateTime
 
+from resources.modeling import AbstractModel
 
-class UserModel:
+class UserModel(AbstractModel):
 
-	def build(self):
-		metadata = MetaData()
-		users = Table('users', metadata,
+	def __init__(self):
+		super(AbstractModel, self).__init__()
+
+	def create(self):
+		Table('users', super.metadata,
 		  Column('id', String(32), primary_key=True),
 		  Column('userName', String(64)),
 		  Column('password', String(64)),
@@ -15,3 +18,4 @@ class UserModel:
 		  Column('modifiedDate', DateTime)
 		)
 
+		return super

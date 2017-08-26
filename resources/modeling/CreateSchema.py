@@ -1,17 +1,12 @@
 from sqlalchemy import create_engine, MetaData, Table, Column, String, DateTime
 
+from resources.modeling.AbstractModel import AbstractModel
+from resources.modeling.UserModel import UserModel
+
 engine = create_engine('postgresql+psycopg2://pguser:p@localhost/quizdb', echo=True)
 connection = engine.connect()
 
-metadata = MetaData()
-users = Table('users', metadata,
-     Column('id', String(32), primary_key=True),
-     Column('userName', String(64)),
-     Column('password', String(64)),
-     Column('fbUserId', String(32)),
-     Column('fbAccessToken', String(128)),
-     Column('createDate', DateTime),
-     Column('modifiedDate', DateTime)
-)
+abstractModel = AbstractModel().__init__(engine)
+UserModel().create()
 
-metadata.create_all(engine)
+
