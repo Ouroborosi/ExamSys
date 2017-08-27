@@ -1,4 +1,4 @@
-from sqlalchemy import create_engine, MetaData, Table, Column, String, DateTime
+from sqlalchemy import create_engine
 
 from resources.modeling.AbstractModel import AbstractModel
 from resources.modeling.UserModel import UserModel
