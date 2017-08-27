@@ -4,11 +4,8 @@ from resources.modeling import AbstractModel
 
 class UserModel(AbstractModel):
 
-	def __init__(self):
-		super(AbstractModel, self).__init__()
-
 	def create(self):
-		Table('users', super.metadata,
+		Table('users', self.metadata,
 		  Column('id', String(32), primary_key=True),
 		  Column('userName', String(64)),
 		  Column('password', String(64)),
@@ -18,4 +15,4 @@ class UserModel(AbstractModel):
 		  Column('modifiedDate', DateTime)
 		)
 
-		return super
+		return self
