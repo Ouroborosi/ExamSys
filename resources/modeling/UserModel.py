@@ -5,14 +5,15 @@ from resources.modeling import AbstractModel
 class UserModel(AbstractModel):
 
 	def table(self):
-		Table('user', self.metadata,
-		  Column('id', String(32), primary_key=True),
-		  Column('userName', String(64), nullable=False),
-		  Column('password', String(64), nullable=False),
-		  Column('userId', String(32), nullable=False),
-		  Column('accessToken', String(128), nullable=False),
-		  Column('createDate', DateTime, nullable=False),
-		  Column('modifiedDate', DateTime)
-		)
+		self.table = \
+			Table('qiz_user', self.metadata,
+			  Column('id', String(32), primary_key=True),
+			  Column('user_name', String(64), nullable=False),
+			  Column('password', String(64), nullable=False),
+			  Column('user_id', String(32), nullable=False),
+			  Column('access_token', String(128), nullable=False),
+			  Column('create_date', DateTime, nullable=False),
+			  Column('modified_date', DateTime, nullable=True)
+			)
 
 		return self

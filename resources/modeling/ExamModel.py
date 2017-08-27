@@ -1,4 +1,4 @@
-from sqlalchemy import Table, Column, String, DateTime
+from sqlalchemy import Table, Column, String
 
 from resources.modeling.AbstractModel import AbstractModel
 
@@ -6,9 +6,11 @@ from resources.modeling.AbstractModel import AbstractModel
 class ExamModel(AbstractModel):
 
     def table(self):
-        Table('exam', self.metadata,
+        self.table = \
+            Table('qiz_exam', self.metadata,
               Column('id', String(32), primary_key=True),
-              Column('userId', String(32), nullable=False)
+              Column('user_id', String(32), nullable=False),
+              Column('module_id', String(32), nullable=False)
               )
 
         return self
