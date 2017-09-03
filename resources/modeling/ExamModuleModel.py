@@ -10,6 +10,7 @@ class ExamModuleModel(AbstractModel):
               Column('id', String(32), primary_key=True),
               Column('description', String(4000), nullable=False),
               Column('user_id', String(32), nullable=False),
+              Column('category_id', String(32), nullable=False),
               Column('create_date', DateTime, nullable=False),
               Column('modified_date', DateTime, nullable=True)
               )

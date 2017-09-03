@@ -790,8 +790,8 @@
 									"showShadow": true,
 									"containerChangeable": false,
 									"containerExtending": false,
-									"left": 944,
-									"top": 381,
+									"left": 920,
+									"top": 749,
 									"width": 225.7744140625,
 									"height": 13,
 									"autoResize": false,
@@ -829,8 +829,8 @@
 											"showShadow": true,
 											"containerChangeable": false,
 											"containerExtending": false,
-											"left": 949,
-											"top": 404,
+											"left": 925,
+											"top": 772,
 											"width": 215.7744140625,
 											"height": 13,
 											"autoResize": false
@@ -853,8 +853,8 @@
 											"showShadow": true,
 											"containerChangeable": false,
 											"containerExtending": false,
-											"left": 949,
-											"top": 419,
+											"left": 925,
+											"top": 787,
 											"width": 215.7744140625,
 											"height": 13,
 											"autoResize": false
@@ -869,8 +869,8 @@
 									"showShadow": true,
 									"containerChangeable": false,
 									"containerExtending": false,
-									"left": 944,
-									"top": 399,
+									"left": 920,
+									"top": 767,
 									"width": 225.7744140625,
 									"height": 38,
 									"autoResize": false
@@ -885,8 +885,8 @@
 							"showShadow": true,
 							"containerChangeable": false,
 							"containerExtending": false,
-							"left": 944,
-							"top": 376,
+							"left": 920,
+							"top": 744,
 							"width": 225.7744140625,
 							"height": 61,
 							"autoResize": false,
@@ -1684,7 +1684,7 @@
 									"height": 13,
 									"autoResize": false,
 									"underline": false,
-									"text": "quiz_exam_module",
+									"text": "qiz_exam_module",
 									"horizontalAlignment": 2,
 									"verticalAlignment": 5,
 									"wordWrap": false
@@ -2674,7 +2674,7 @@
 									"showShadow": true,
 									"containerChangeable": false,
 									"containerExtending": false,
-									"left": 1055,
+									"left": 842,
 									"top": 801,
 									"width": 0,
 									"height": 13,
@@ -2705,8 +2705,8 @@
 									"showShadow": true,
 									"containerChangeable": false,
 									"containerExtending": false,
-									"left": 938,
-									"top": 768,
+									"left": 572,
+									"top": 677,
 									"width": 21,
 									"height": 13,
 									"autoResize": false,
@@ -2770,7 +2770,7 @@
 								"$ref": "AAAAAAFeIorRO9V1Jek="
 							},
 							"lineStyle": 2,
-							"points": "1056:436;1056:792;767:792",
+							"points": "920:792;767:792",
 							"nameLabel": {
 								"$ref": "AAAAAAFeI/9FINijAuc="
 							},
@@ -3751,7 +3751,7 @@
 					"_parent": {
 						"$ref": "AAAAAAFLzntJC6EktCk="
 					},
-					"name": "quiz_exam_module",
+					"name": "qiz_exam_module",
 					"ownedElements": [
 						{
 							"_type": "ERDRelationship",

@@ -7,7 +7,6 @@ class Question(AbstractModel):
         self.table = \
             Table('qiz_question', self.metadata,
               Column('id', String(32), primary_key=True),
-              Column('category_id', String(32), nullable=False),
               Column('question', String(4000), nullable=False)
               )
 
