@@ -1,17 +1,14 @@
 from sqlalchemy import MetaData
 from sqlalchemy.engine import Engine
-from abc import abstractmethod
+from abc import abstractmethod, ABCMeta
 
-class AbstractModel():
-    engine = None
 
-    def __init__(self, engine: Engine):
-        self.engine = engine
+class AbstractModel(metaclass=ABCMeta):
+    metaData = MetaData()
 
     def create(self):
-        metaData = MetaData()
         self.table()
-        metaData.create_all(self.engine)
+        self.metaData.create_all(self.engine)
 
         return self
 
